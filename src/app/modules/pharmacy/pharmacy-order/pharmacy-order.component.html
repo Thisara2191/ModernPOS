@@ -1,0 +1,311 @@
+<div class="col-12 h-100 g-0 position-relative p-5">
+  <div class="row position-relative g-0" style="height: inherit">
+    <div class="col-12" style="height: 75px">
+      <div class="row">
+        <div class="col-7">
+          <p
+            style="font-weight: 500; font-size: 14px"
+            class="text-black p-0 m-0 pb-2 px-1"
+          >
+            Search From Here ( F1 )
+          </p>
+          <input type="text" style="width: 100%" />
+        </div>
+        <div class="col-2">
+          <p
+            style="font-weight: 500; font-size: 14px"
+            class="text-black p-0 m-0 pb-2 px-1"
+          >
+            Expire Date
+          </p>
+          <input
+            type="text"
+            class="text-center text-black-50"
+            style="width: 100%"
+            disabled
+            value="DD - MM - YYYY"
+          />
+        </div>
+        <div class="col-1">
+          <p
+            style="font-weight: 500; font-size: 14px"
+            class="text-black p-0 m-0 pb-2 px-1"
+          >
+            Qty
+          </p>
+          <input type="number" class="text-center" style="width: 100%" />
+        </div>
+        <div class="col-2">
+          <p
+            style="font-weight: 500; font-size: 14px"
+            class="text-black p-0 m-0 pb-2 px-1"
+          >
+            Selling Price
+          </p>
+          <input
+            type="text"
+            style="width: 100%"
+            class="text-end"
+            value="0.0"
+            disabled
+          />
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%; height: 30px; background: white"></div>
+    <div class="col-12" style="height: 165px">
+      <div style="height: inherit; width: 100%">
+        <table class="filtered-items-table" style="height: 42px">
+          <tr class="gradient-bg">
+            <th>Item Name & Description</th>
+            <th>Qty</th>
+            <th>Expire Date</th>
+            <th>Unit Price</th>
+          </tr>
+        </table>
+        <div class="overflow-y-auto align-content-center" style="height: calc(100% - 42px)">
+          <table *ngIf="false" class="filtered-items-table">
+            <tr>
+              <td>Paracetamol 500mg - Pain relief tablet</td>
+              <td>50</td>
+              <td>2025-08-15</td>
+              <td>$0.10</td>
+            </tr>
+            <tr>
+              <td>Ibuprofen 200mg - Anti-inflammatory</td>
+              <td>30</td>
+              <td>2024-12-20</td>
+              <td>$0.15</td>
+            </tr>
+            <tr>
+              <td>Vitamin C 1000mg - Immunity booster</td>
+              <td>100</td>
+              <td>2026-01-10</td>
+              <td>$0.20</td>
+            </tr>
+            <tr>
+              <td>Amoxicillin 250mg - Antibiotic</td>
+              <td>25</td>
+              <td>2025-05-05</td>
+              <td>$0.50</td>
+            </tr>
+            <tr>
+              <td>Antiseptic Cream - Skin treatment</td>
+              <td>10</td>
+              <td>2026-11-30</td>
+              <td>$3.00</td>
+            </tr>
+          </table>
+            <div class="d-flex p-4 py-3 mt-3" style="border: 1px solid rgb(230, 230, 230);border-radius: 5px;" >
+              <i class="bi bi-exclamation-square fs-2 my-auto"></i>
+              <div class="ms-3 my-auto">
+                <p class="p-0 m-0" style="font-size: 15px;font-weight: 500;line-height: 16px;">No Items Found</p>
+                <p class="text-black-50 p-0 m-0" style="font-size: 13px">Entered Search Ley Doesnt Loaded amy products</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%; height: 30px; background: white"></div>
+    <div class="col-12" style="height: calc(100% - 410px)">
+      <!-- Header Table -->
+      <table class="filtered-items-table" style="width: 100%">
+        <tr class="gradient-bg">
+          <th>Item Name & Description</th>
+          <th>Qty</th>
+          <th>Unit Price</th>
+          <th>Discount</th>
+          <th>Total</th>
+        </tr>
+      </table>
+
+      <!-- Scrollable Content -->
+      <div class="overflow-y-auto align-content-center" style="height: calc(100% - 40px)">
+        <table *ngIf="false" class="filtered-items-table" style="width: 100%">
+          <tr>
+            <td>Paracetamol 500mg - Pain relief tablet</td>
+            <td>50</td>
+            <td>$0.10</td>
+            <td>$0.05</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td>Ibuprofen 200mg - Anti-inflammatory</td>
+            <td>30</td>
+            <td>$0.15</td>
+            <td>$0.05</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>Vitamin C 1000mg - Immunity booster</td>
+            <td>100</td>
+            <td>$0.20</td>
+            <td>$0.10</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Amoxicillin 250mg - Antibiotic</td>
+            <td>25</td>
+            <td>$0.50</td>
+            <td>$0.20</td>
+            <td>$12.50</td>
+          </tr>
+          <tr>
+            <td>Paracetamol 500mg - Pain relief tablet</td>
+            <td>50</td>
+            <td>$0.10</td>
+            <td>$0.05</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td>Ibuprofen 200mg - Anti-inflammatory</td>
+            <td>30</td>
+            <td>$0.15</td>
+            <td>$0.05</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>Vitamin C 1000mg - Immunity booster</td>
+            <td>100</td>
+            <td>$0.20</td>
+            <td>$0.10</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Amoxicillin 250mg - Antibiotic</td>
+            <td>25</td>
+            <td>$0.50</td>
+            <td>$0.20</td>
+            <td>$12.50</td>
+          </tr>
+          <tr>
+            <td>Paracetamol 500mg - Pain relief tablet</td>
+            <td>50</td>
+            <td>$0.10</td>
+            <td>$0.05</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td>Ibuprofen 200mg - Anti-inflammatory</td>
+            <td>30</td>
+            <td>$0.15</td>
+            <td>$0.05</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>Vitamin C 1000mg - Immunity booster</td>
+            <td>100</td>
+            <td>$0.20</td>
+            <td>$0.10</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Amoxicillin 250mg - Antibiotic</td>
+            <td>25</td>
+            <td>$0.50</td>
+            <td>$0.20</td>
+            <td>$12.50</td>
+          </tr>
+          <tr>
+            <td>Paracetamol 500mg - Pain relief tablet</td>
+            <td>50</td>
+            <td>$0.10</td>
+            <td>$0.05</td>
+            <td>$5.00</td>
+          </tr>
+          <tr>
+            <td>Ibuprofen 200mg - Anti-inflammatory</td>
+            <td>30</td>
+            <td>$0.15</td>
+            <td>$0.05</td>
+            <td>$4.50</td>
+          </tr>
+          <tr>
+            <td>Vitamin C 1000mg - Immunity booster</td>
+            <td>100</td>
+            <td>$0.20</td>
+            <td>$0.10</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Amoxicillin 250mg - Antibiotic</td>
+            <td>25</td>
+            <td>$0.50</td>
+            <td>$0.20</td>
+            <td>$12.50</td>
+          </tr>
+        </table>
+        <div class="d-flex justify-content-center" >
+          <i class="bi bi-cart fs-1 my-auto"></i>
+          <div class="ms-3 my-auto">
+            <p class="p-0 m-0" style="font-size: 15px;font-weight: 500;line-height: 16px;">Cart Is Empty</p>
+            <p class="text-black-50 p-0 m-0" style="font-size: 13px;width: 500px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita accusantium voluptatibus aut itaque ut placeat ea debitis eligendi eos iste!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%; height: 20px; background: white"></div>
+    <div class="col-12" style="height: 70px">
+      <div class="row mt-3">
+        <div class="col-2 position-relative">
+          <p
+            style="font-weight: 500; font-size: 14px; top: -10px; left: 25px"
+            class="text-black p-0 m-0 pb-2 px-2 position-absolute bg-white"
+          >
+            Items
+          </p>
+          <input
+            type="text"
+            class="text-end fs-6"
+            readonly
+            style="width: 100%; height: 55px"
+            value="0"
+          />
+        </div>
+        <div class="col-3 position-relative">
+          <p
+            style="font-weight: 500; font-size: 14px; top: -10px; left: 25px"
+            class="text-black p-0 m-0 pb-2 px-2 position-absolute bg-white"
+          >
+            Discount Total
+          </p>
+          <input
+            type="text"
+            class="text-end fs-6"
+            readonly
+            style="width: 100%; height: 55px"
+            value="0.0"
+          />
+        </div>
+        <div class="col-3 position-relative">
+          <p
+            style="font-weight: 500; font-size: 14px; top: -10px; left: 25px"
+            class="text-black p-0 m-0 pb-2 px-2 position-absolute bg-white"
+          >
+            Grand Total
+          </p>
+          <input
+            type="text"
+            class="text-end fs-6"
+            readonly
+            style="width: 100%; height: 55px"
+            value="0.0"
+          />
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-7 offset-5 text-end">
+              <app-default-action-button
+                height="50px"
+                buttonUI="primary"
+                buttonText="Order Now ( F6 )"
+                buttonType="button"
+                [buttonBackground]="['#003e1f', '#0fb800']"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

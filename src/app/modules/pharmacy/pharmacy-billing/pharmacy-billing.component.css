@@ -1,0 +1,187 @@
+:host {
+  --primary: #003e1f;
+  --secondary: #0fb800;
+  --secondary-light: #e5ffe3;
+  --primary-light: #003e1f27;
+  --paymnet-root-border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+.basic-card-border {
+  border-radius: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 10px 15px;
+  height: 70px;
+}
+
+.card-items-root button {
+  background: transparent;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 3px;
+  padding: 15px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-items-root {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.ordered-items-table {
+  width: 100%;
+  border: 1px solid rgb(230, 230, 230);
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ordered-items-table tr td {
+  border: 1px solid rgb(230, 230, 230);
+  padding: 15px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ordered-items-table tr th {
+  position: relative;
+  background-color: transparent;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.ordered-items-table tr td:first-child,
+.ordered-items-table tr th:first-child {
+  text-align: start;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    to left,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+  /*
+  background-size: 200% 200%;
+  animation: gradientAnimation 5s infinite ease-in-out;
+  */
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.tbl-head th:not(:last-child)::after {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 1px;
+  background: white;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input {
+  outline: none;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+  padding-inline: 13px;
+  caret-color: var(--secondary);
+}
+input::selection {
+  background-color: var(--secondary);
+  color: white;
+}
+input::placeholder {
+  color: gray;
+  font-size: 13px;
+  font-weight: 400;
+}
+input:disabled {
+  background-color: rgb(250, 250, 250);
+  cursor: not-allowed;
+  font-size: 12px;
+}
+
+input:not(:disabled):focus {
+  border-color: var(--secondary);
+}
+
+.analytic-label {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.bg-primary-color {
+  background-color: var(--primary);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary);
+}
+
+.basic-card-border:hover,
+.basic-card-border:focus {
+  border-color: rgb(175, 175, 175);
+  cursor: pointer;
+}
+
+.ordered-items-table tr:hover {
+  color: var(--primary);
+  background: linear-gradient(
+    to right,
+    var(--secondary-light) 0%,
+    var(--primary-light) 100%
+  );
+}
+
+.payment-section-root {
+  border-radius: var(--paymnet-root-border-radius);
+  background-color:rgb(230, 230, 230);
+  height: inherit;
+  padding: 1px;
+  height: inherit;
+}
+
+.payment-section-main-base {
+  height: inherit;
+  border-radius: calc(var(--paymnet-root-border-radius) - 1px)
+}
+
+
+.basic-order-details div:not(:last-child){
+  border-right: 1px solid rgb(230, 230, 230);
+}

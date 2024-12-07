@@ -1,0 +1,66 @@
+:host{
+  --primary :#003e1f;
+  --secondary:#0fb800;
+}
+
+input {
+  outline: none;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  height: 45px;
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+  padding-inline: 13px;
+  caret-color: var(--secondary);
+}
+input::selection{
+  background-color: var(--secondary);
+  color: white;
+}
+input::placeholder {
+  color: gray;
+  font-size: 13px;
+  font-weight: 400;
+}
+input:disabled {
+  background-color: rgb(250, 250, 250);
+  cursor: not-allowed;
+  font-size: 12px;
+}
+
+input:not(:disabled):focus {
+  border-color: var(--secondary);
+}
+
+.filtered-items-table {
+  width: 100%;
+  border: 1px solid rgb(230, 230, 230);
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.filtered-items-table tr td{
+  border: 1px solid rgb(230, 230, 230);
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.filtered-items-table tr th{
+  background-color: transparent;
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+}
+
+.filtered-items-table tr td:first-child,.filtered-items-table tr th:first-child {
+  text-align: start;
+}
+
+.gradient-bg{
+  background: linear-gradient(to left , var(--primary) 0%, var(--secondary) 100%);
+}

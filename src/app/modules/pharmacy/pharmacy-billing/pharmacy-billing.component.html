@@ -1,0 +1,202 @@
+<div class="col-12 h-100 g-0 position-relative p-5">
+  <div class="row position-relative g-0" style="height: inherit">
+    <div class="col-12" style="height: inherit">
+      <div class="row" style="height: inherit">
+        <div class="col-7 pe-5" style="height: inherit">
+          <div class="row" style="height: inherit">
+            <div class="col-12 px-2" style="height: 120px">
+              <div class="row px-1">
+                <div class="col-12 g-0 px-3">
+                  <div class="d-grid card-items-root">
+                    <div class="basic-card-border text-end position-relative">
+                      <label class="analytic-label bg-primary-color"
+                        >Completed</label
+                      >
+                      <h5
+                        class="position-absolute fw-bold"
+                        style="bottom: 15px; right: 15px"
+                      >
+                        25
+                      </h5>
+                    </div>
+                    <div class="basic-card-border text-end position-relative">
+                      <label class="analytic-label bg-danger">Declined</label>
+                      <h5
+                        class="position-absolute fw-bold"
+                        style="bottom: 15px; right: 15px"
+                      >
+                        03
+                      </h5>
+                    </div>
+                    <div class="basic-card-border text-end position-relative">
+                      <label class="analytic-label bg-secondary-color"
+                        >Pending</label
+                      >
+                      <h5
+                        class="position-absolute fw-bold"
+                        style="bottom: 15px; right: 15px"
+                      >
+                        25
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 px-3" style="height: 80px">
+              <div class="float-start">
+                <h5 style="font-weight: 600; font-size: 16px">Hold Orders</h5>
+                <p class="text-black-50" style="font-size: 12px">
+                  Load all <strong>Ready To Pay</strong> Orders
+                </p>
+              </div>
+              <div class="float-end position-relative">
+                <input
+                  type="text"
+                  class="hold-orders-search"
+                  placeholder="Search from Order Number or Ticket Number "
+                  style="width: 400px"
+                />
+              </div>
+            </div>
+            <div class="col-12" style="height: calc(100% - 200px)">
+              <table class="ordered-items-table" style="height: 42px">
+                <colgroup>
+                  <col style="width: 50%" />
+                  <col style="width: 15%" />
+                  <col style="width: 25%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <tr class="gradient-bg tbl-head">
+                  <th>Order</th>
+                  <th>Items</th>
+                  <th>
+                    SubTotal
+                    <span style="font-size: 11px; font-style: italic"
+                      >( LKR )</span
+                    >
+                  </th>
+                  <th></th>
+                </tr>
+              </table>
+              <div class="overflow-y-auto" style="height: calc(100% - 42px)">
+                <table
+                  *ngIf="true"
+                  class="ordered-items-table"
+                  style="border: none !important"
+                >
+                  <colgroup>
+                    <col style="width: 50%" />
+                    <col style="width: 15%" />
+                    <col style="width: 25%" />
+                    <col style="width: 10%" />
+                  </colgroup>
+                  <tr>
+                    <td>Paracetamol 500mg - Pain relief tablet</td>
+                    <td>50</td>
+                    <td>$0.10</td>
+                    <td><i class="bi bi-eye"></i></td>
+                  </tr>
+                  <tr>
+                    <td>Ibuprofen 200mg - Anti-inflammatory</td>
+                    <td>30</td>
+                    <td>2024-12-20</td>
+                    <td>$0.15</td>
+                  </tr>
+                  <tr>
+                    <td>Vitamin C 1000mg - Immunity booster</td>
+                    <td>100</td>
+                    <td>2026-01-10</td>
+                    <td>$0.20</td>
+                  </tr>
+                  <tr>
+                    <td>Amoxicillin 250mg - Antibiotic</td>
+                    <td>25</td>
+                    <td>2025-05-05</td>
+                    <td>$0.50</td>
+                  </tr>
+                  <tr>
+                    <td>Antiseptic Cream - Skin treatment</td>
+                    <td>10</td>
+                    <td>2026-11-30</td>
+                    <td>$3.00</td>
+                  </tr>
+                </table>
+                <div
+                  *ngIf="false"
+                  class="d-flex p-4 py-3 mt-3"
+                  style="
+                    border: 1px solid rgb(230, 230, 230);
+                    border-radius: 5px;
+                  "
+                >
+                  <i class="bi bi-exclamation-square fs-2 my-auto"></i>
+                  <div class="ms-3 my-auto">
+                    <p
+                      class="p-0 m-0"
+                      style="
+                        font-size: 15px;
+                        font-weight: 500;
+                        line-height: 16px;
+                      "
+                    >
+                      No Items Found
+                    </p>
+                    <p class="text-black-50 p-0 m-0" style="font-size: 13px">
+                      Entered Search Ley Doesnt Loaded amy products
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 pe-4" style="height: inherit;">
+          <div class="row payment-section-root">
+            <div class="col-12 bg-white payment-section-main-base px-5 py-4">
+              <div class="row py-2">
+                <div class="col-12 mb-3">
+                  <h6 style="font-weight: 500;">Paymnet Panel</h6>
+                  <p class="text-black-50" style="font-size: 13px;">Payment Via <strong>Cash</strong>, <strong>Crad</strong> Or <strong>Credit</strong></p>
+                </div>
+                <div class="col-12">
+                  <hr style="border:none !important; height: 1px;background-color: rgb(180, 180, 180);"/>
+                </div>
+                <div class="col-12 px-4">
+                  <div class="row basic-order-details ">
+                    <div class="col-4 pe-4">
+                      <label class="text-black-50 pb-2 " style="font-size: 12px;">Selected Order</label>
+                      <h5 style="font-weight: 500; font-size: 16px;">ORD14596328</h5>
+                    </div>
+                    <div class="col-4 px-4 pb-2 text-center">
+                      <label class="text-black-50" style="font-size: 12px;">Ticket No</label>
+                      <h5 style="font-weight: 500; font-size: 16px;">25</h5>
+                    </div>
+                    <div class="col-4 pb-2 ps-4 text-end">
+                      <label class="text-black-50" style="font-size: 12px;">Created Date</label>
+                      <h5 style="font-weight: 500; font-size: 16px;">12 - 10 - 2024</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <hr style="border:none !important; height: 1px;background-color: rgb(180, 180, 180);"/>
+                </div>
+                <div class="col-12 px-4">
+                  <div class="row basic-order-details ">
+                    <div class="col-12 pb-2 ">
+                      <label class="text-black-50" style="font-size: 12px;">Grand Total</label>
+                      <h4 style="font-weight: 600; font-size: 15px; text-align: end;"><span>LKR</span> 145,000.00</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <hr style="border:none !important; height: 1px;background-color: rgb(180, 180, 180);"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
